@@ -1,0 +1,27 @@
+{{template "header"}}
+<section class="jumbotron">
+  <div class="container">
+    <h1>Clubes registrados</h1>
+  </div>
+</section>
+
+<table class="table table-hover">
+  <caption>Equipos</caption>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Nombre</th>
+      <th>Fecha de fundación</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{range .}}
+    <tr>
+      <td>{{.Tid}}</td>
+      <td>{{.Tname}}</td>
+      <td>{{.Tdate}}</td>
+    </tr>
+    {{end}}
+  </tbody>
+</table>
+{{template "footer"}}

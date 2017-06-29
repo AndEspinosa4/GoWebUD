@@ -1,0 +1,33 @@
+{{template "header"}}
+<section class="jumbotron">
+  <div class="container">
+    <h1>Jugadores registrados</h1>
+  </div>
+</section>
+<table class="table table-hover">
+  <caption>Jugadores</caption>
+  <thead>
+    <tr>
+      <th>Identificación</th>
+      <th>Fecha de cumpleaños</th>
+      <th>Nombre</th>
+      <th>Equipo</th>
+      <th>Sobrenombre</th>
+      <th>Posición</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{range .}}
+    <tr>
+      <td>{{.Pid}}</td>
+      <td>{{.Bdate}}</td>
+      <td>{{.Pname}}</td>
+      <td>{{.Pteam}}</td>
+      <td>{{.Pnicnkame}}</td>
+      <td>{{.Pposition}}</td>
+    </tr>
+    {{end}}
+  </tbody>
+</table>
+
+{{template "footer"}}

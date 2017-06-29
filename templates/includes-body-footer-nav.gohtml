@@ -1,0 +1,42 @@
+{{define "header"}}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>GoWeb</title>
+</head>
+<link rel="stylesheet" href="/public/css/bootstrap.min.css">
+<link rel="stylesheet" href="/public/css/style.css">
+<body>
+  <header>
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="/index"class="navbar-brand">Administración de Clubes</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="/Club" >Club</a></li>
+          <li><a href="/Players" >Jugadores</a></li>
+          <li><a href="/NewSigning" >Nueva contratación</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main container">
+{{end}}
+{{define "footer"}}
+</main>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6">
+        <p>Andrés Felipe Espinosa Martínez - Jairo Andrés Quevedo Bolivar</p>        
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="/public/js/jquery.js"></script>
+<script src="/public/js/bootstrap.min.js"></script>
+</body>
+</html>
+{{end}}
